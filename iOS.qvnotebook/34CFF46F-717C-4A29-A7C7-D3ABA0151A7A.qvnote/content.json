@@ -1,0 +1,31 @@
+{
+  "title": "Tidbits from \"Developing iOS 8 Apps with Swift” — Stanford iTunes U",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "\nIf a weak/unowned variable says it's only for class types, and you're using a protocol, but you still want weak for memory management purposes, then you can make the protocol for classes-only"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "```\nprotocol: class, ImplementingProtocol1 {\n}\n```"
+    },
+    {
+      "type": "text",
+      "data": "<hr>\n"
+    },
+    {
+      "type": "markdown",
+      "data": "You can set initial data for UIView elements in the viewcontroller by:"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "```\n@IBOutlet view ... {\n didSet {\n // initialization\n }\n}\n```"
+    },
+    {
+      "type": "text",
+      "data": "<hr>"
+    }
+  ]
+}
