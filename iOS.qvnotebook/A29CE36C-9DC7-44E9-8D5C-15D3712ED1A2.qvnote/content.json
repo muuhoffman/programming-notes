@@ -1,0 +1,26 @@
+{
+  "title": "RxSwift Trace Resources — Debugging Memory Leaks",
+  "cells": [
+    {
+      "type": "text",
+      "data": "See&nbsp;<a href=\"https://github.com/ReactiveX/RxSwift/blob/master/Documentation/GettingStarted.md#debugging-memory-leaks\">Debugging Memory Leaks</a>&nbsp;on the RxSwift github. &nbsp;To get this to work, we have to do the following:"
+    },
+    {
+      "type": "text",
+      "data": "1. Add&nbsp;<code>​</code>​the following code to the Podfile"
+    },
+    {
+      "type": "code",
+      "language": "text",
+      "data": "post_install do |installer|\n   installer.pods_project.targets.each do |target|\n      if target.name == 'RxSwift'\n         target.build_configurations.each do |config|\n            if config.name == 'Debug'\n               config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['-D', 'TRACE_RESOURCES']\n            end\n         end\n      end\n   end\nend"
+    },
+    {
+      "type": "text",
+      "data": "2.<span style=\"color: rgb(44, 45, 48); font-family: Slack-Lato, appleLogo, sans-serif; font-size: 15px; line-height: 22px; background-color: rgb(249, 249, 249);\">&nbsp;Add flag&nbsp;</span><code class=\"special_formatting\" style=\"box-sizing: border-box; padding-top: 1px; padding-bottom: 1px; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 0.72rem; color: rgb(204, 34, 85); background-color: rgb(247, 247, 249); border: 1px solid rgb(225, 225, 232); line-height: 0.72rem;\"><span class=\"copyonly\" style=\"box-sizing: border-box; display: inline-block; vertical-align: baseline; height: 0px; background-size: 0px; font-size: 0px; color: transparent; float: left; text-rendering: auto; -webkit-user-select: none; background-repeat: no-repeat no-repeat;\">`</span>-D TRACE_RESOURCES<span class=\"codecopyonly copyonly\" style=\"box-sizing: border-box; display: inline-block; vertical-align: baseline; height: 0px; background-size: 0px; font-size: 0px; color: transparent; float: left; text-rendering: auto; -webkit-user-select: none; background-repeat: no-repeat no-repeat;\">`</span></code><span style=\"color: rgb(44, 45, 48); font-family: Slack-Lato, appleLogo, sans-serif; font-size: 15px; line-height: 22px; background-color: rgb(249, 249, 249);\">&nbsp;to swift compiler custom flags</span>"
+    },
+    {
+      "type": "text",
+      "data": "Also, see&nbsp;<a href=\"https://github.com/ReactiveX/RxSwift/issues/378\">this issue</a>&nbsp;on the RxSwift Github"
+    }
+  ]
+}

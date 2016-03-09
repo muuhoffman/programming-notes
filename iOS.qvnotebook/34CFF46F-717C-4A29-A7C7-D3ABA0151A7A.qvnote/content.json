@@ -37,7 +37,7 @@
     },
     {
       "type": "text",
-      "data": "When preparing for segue, the outlets on the destination view controller will not have been set!"
+      "data": "<div><b>Segues</b></div>When preparing for segue, the outlets on the destination view controller will not have been set!<div><span style=\"line-height: 1.4;\"><br></span></div><div><span style=\"line-height: 1.4;\"><code>shouldPerformSegueWithIdentifier</code> can be used to cancel segues after they are performed, but before prepareForSegue</span></div>"
     },
     {
       "type": "text",
