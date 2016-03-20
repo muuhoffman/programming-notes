@@ -3,6 +3,14 @@
   "cells": [
     {
       "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "#Lecture 6#"
+    },
+    {
+      "type": "markdown",
       "data": "\nIf a weak/unowned variable says it's only for class types, and you're using a protocol, but you still want weak for memory management purposes, then you can make the protocol for classes-only"
     },
     {
@@ -28,8 +36,12 @@
       "data": "<hr>"
     },
     {
-      "type": "text",
-      "data": "<img src=\"quiver-image-url/C292C8A73B98EBE67A6CDA800D95838A.png\" alt=\"iTunes iTunes, Today at 11.49.35 AM.png\">"
+      "type": "markdown",
+      "data": "#Lecture 7#"
+    },
+    {
+      "type": "markdown",
+      "data": "![iTunes iTunes, Today at 11.49.35 AM.png](quiver-image-url/C292C8A73B98EBE67A6CDA800D95838A.png)"
     },
     {
       "type": "text",
@@ -45,11 +57,35 @@
     },
     {
       "type": "text",
-      "data": "<div>Lec. 7 — 1:05:41</div><div>You can make a popover presentation controller on the iPhone like you can in the iPad by not displaying FullScreen. &nbsp;By default, iPhone displays full screen.</div><img src=\"quiver-image-url/AFA14609389F1255B6DCEB3D215234B9.png\" alt=\"iTunes iTunes, Today at 3.26.33 PM.png\">"
+      "data": "<div>Lec. 7 — 1:05:41</div><div>You can make a popover presentation controller on the iPhone like you can in the iPad by not displaying FullScreen. &nbsp;By default, iPhone displays full screen.</div><img src=\"quiver-image-url/AFA14609389F1255B6DCEB3D215234B9.png\" alt=\"iTunes iTunes, Today at 3.26.33 PM.png\"><div>Shows how to do it at Lec 7 — 1:36:00</div>"
     },
     {
       "type": "text",
-      "data": "<font color=\"#323232\"><span style=\"background-color: rgb(254, 250, 0);\">Stopped at Lec. 7&nbsp;— 1:11:38</span></font>"
+      "data": "<hr>"
+    },
+    {
+      "type": "text",
+      "data": "<b>Polymorphism of ViewControllers</b><div>ViewControllers can be subclassed. &nbsp;When they are, everything is inherited, including outlets. &nbsp;If you want to override property observers (i.e. didSet method), that will add on to the superclass’s didSet method on that property, not replace it.</div>"
+    },
+    {
+      "type": "markdown",
+      "data": "#Lecture 8#"
+    },
+    {
+      "type": "text",
+      "data": "<b>ViewController Life Cycle</b><div><ul><li>Geometry related things cannot be done in viewDidLoad because we don’t know the size of the screen yet.</li><li>Geometry is set by the time in viewWillAppear (i.e. your view’s bounds)</li><li>viewWIllDisappear/viewDidDisappear available too</li><li>Geometry is best handled in viewWillLayoutSubviews/viewDidLayoutSubviews, can set this manually — setViewNeedsLayout</li><ul><li>Autolayout occurs between “will” and “did”</li></ul><li>Low memory situations — didReceiveMemoryWarning: should set pointers to nil in this scenario usually</li><li>awakeFromNib — outlets are not yet set… use viewDidLoad/viewWIllAppear instead. This is a good place to set yourself as a delegate of the splitViewController that you’re in to start receiving those events really early.</li></ul></div>"
+    },
+    {
+      "type": "text",
+      "data": "<b>Size Classes </b>(Lec 8 — 28:00)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "<br>"
     }
   ]
 }
