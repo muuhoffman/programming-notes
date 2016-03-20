@@ -1,0 +1,13 @@
+{
+  "title": "Core Data Predicates",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<a href=\"https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Predicates/Articles/pUsing.html\">Apple Documentation on Predicates</a><br>"
+    },
+    {
+      "type": "markdown",
+      "data": "## Examples\n* Equivalency\n  * `NSPredicate(format: \"isHungry = %@\", isHungry) \n* Items in set`\n  * `NSPredicate(format: \"username IN %@\", usernames)`\n* Items not in set\n  * `NSPredicate(format: \"NOT (username IN %@)\", usernames)`"
+    }
+  ]
+}

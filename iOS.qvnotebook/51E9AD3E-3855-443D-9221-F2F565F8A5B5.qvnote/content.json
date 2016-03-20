@@ -1,0 +1,23 @@
+{
+  "title": "Delete Items in Core Data",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### Delete an object"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "moc.deleteObject(NSManagedObject)"
+    },
+    {
+      "type": "markdown",
+      "data": "### Delete all objects"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "class func deleteAllObjectsInEntity(entityName: String) {\n    let context = CoreDataStackManager.sharedInstance().managedObjectContext!\n    let request = NSFetchRequest(entityName: entityName)\n    request.includesPropertyValues = false\n    \n    do {\n        let objects = try context.executeFetchRequest(request) as! [NSManagedObject]\n        \n        if objects.count > 0 {\n            \n            for object in objects{\n                context.deleteObject(object)\n            }\n            try context.save()\n        }\n    } catch {}\n}"
+    }
+  ]
+}

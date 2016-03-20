@@ -49,7 +49,7 @@
     },
     {
       "type": "text",
-      "data": "When preparing for segue, the outlets on the destination view controller will not have been set!"
+      "data": "<div><b>Segues</b></div>When preparing for segue, the outlets on the destination view controller will not have been set!<div><span style=\"line-height: 1.4;\"><br></span></div><div><span style=\"line-height: 1.4;\"><code>shouldPerformSegueWithIdentifier</code> can be used to cancel segues after they are performed, but before prepareForSegue</span></div>"
     },
     {
       "type": "text",
@@ -85,7 +85,32 @@
     },
     {
       "type": "text",
-      "data": "<br>"
+      "data": "<font color=\"#323232\"><span style=\"background-color: rgb(254, 250, 0);\">Stopped at Lec. 7&nbsp;— 1:11:38</span></font>"
+    },
+    {
+      "type": "text",
+      "data": "<div><b>Scroll Views </b>- Lec 9 (beginning)</div><img src=\"quiver-image-url/CFA54CFC3C00476D0BF6930C293057D6.png\" alt=\"Stanford - Developing iOS 8 Apps with Swift - 9. Scroll View and Multithreading - YouTube Google Chrome, Today at 2.49.30 PM.png\"><div>Scroll views are essentially a larger content size with subviews positioned in them.</div>"
+    },
+    {
+      "type": "text",
+      "data": "<b>Check if view is on screen</b>"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "if view.window != nil {}"
+    },
+    {
+      "type": "text",
+      "data": "<div><b>Multithreaded Programming - basics</b></div><img src=\"quiver-image-url/7ED56178141C6301C757DDBB39FA890F.png\" alt=\"Stanford - Developing iOS 8 Apps with Swift - 9. Scroll View and Multithreading - YouTube Google Chrome, Today at 3.26.02 PM.png\">"
+    },
+    {
+      "type": "text",
+      "data": "<b>Get</b><b>&nbsp;other queues</b><div><div><img src=\"quiver-image-url/822501E2FFE6FA97098B92CC358C12D2.png\" alt=\"Stanford - Developing iOS 8 Apps with Swift - 9. Scroll View and Multithreading - YouTube Google Chrome, Today at 3.28.39 PM.png\"><b><br></b></div></div><div>These queues are concurrent, but you can create your own serial queue</div><div><img src=\"quiver-image-url/E29CD75BDCFC58648CD96A4E46664090.png\" alt=\"Stanford - Developing iOS 8 Apps with Swift - 9. Scroll View and Multithreading - YouTube Google Chrome, Today at 3.30.28 PM.png\"><br></div>"
+    },
+    {
+      "type": "text",
+      "data": "<b>Do something in the future</b><div><img src=\"quiver-image-url/4EF3C4C0B760989B0C5C013465ECDD26.png\" alt=\"Stanford - Developing iOS 8 Apps with Swift - 9. Scroll View and Multithreading - YouTube Google Chrome, Today at 3.31.30 PM.png\"><b><br></b></div>"
     }
   ]
 }
