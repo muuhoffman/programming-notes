@@ -1,0 +1,14 @@
+{
+  "title": "TableView Empty State",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Set the `tableView.backgroundView` property in `numberOfSectionsInTableView` from [App Coda Tutorial](http://www.appcoda.com/pull-to-refresh-uitableview-empty/)"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView\n{\n    // Return the number of sections.\n    if (loans) {\n        \n        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;\n        return 1;\n        \n    } else {\n        \n        // Display a message when the table is empty\n        UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];\n        \n        messageLabel.text = @\"No data is currently available. Please pull down to refresh.\";\n        messageLabel.textColor = [UIColor blackColor];\n        messageLabel.numberOfLines = 0;\n        messageLabel.textAlignment = NSTextAlignmentCenter;\n        messageLabel.font = [UIFont fontWithName:@\"Palatino-Italic\" size:20];\n        [messageLabel sizeToFit];\n        \n        self.tableView.backgroundView = messageLabel;\n        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;\n        \n    }\n\n    return 0;\n}"
+    }
+  ]
+}

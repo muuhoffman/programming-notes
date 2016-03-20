@@ -1,0 +1,40 @@
+{
+  "title": "Refresh Tableview",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# In ViewController (as a property)"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "var myRefreshControl:UIRefreshControl?"
+    },
+    {
+      "type": "markdown",
+      "data": "# In viewDidLoad()"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "// Pull to refresh code\n        self.myRefreshControl = UIRefreshControl()\n        self.myRefreshControl!.attributedTitle = NSAttributedString(string: \"Pull to refresh\")\n        // self.refreshControl!.backgroundColor = UIColor.whiteColor()\n        // self.refreshControl!.tintColor = UIColor.blackColor()\n        self.myRefreshControl!.addTarget(self, action: \"refresh:\", forControlEvents: UIControlEvents.ValueChanged)\n        self.tableView.addSubview(myRefreshControl!)"
+    },
+    {
+      "type": "markdown",
+      "data": "# Action function (in ViewController)"
+    },
+    {
+      "type": "code",
+      "language": "swift",
+      "data": "func refresh(sender:AnyObject)\n    {\n        // Do something to refresh...\n        // Stop the refresh control\n        self.myRefreshControl?.endRefreshing()\n    }"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}
