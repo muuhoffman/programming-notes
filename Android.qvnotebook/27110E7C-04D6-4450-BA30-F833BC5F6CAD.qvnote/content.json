@@ -1,0 +1,9 @@
+{
+  "title": "Running LunchBunch on the emulator",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "1. android avd in terminal\n2. select avd\n3. run it\n4. adb install latest .apk file (path to .apk)(edited)*\n\n\n\n\n`to create a new avd: android create avd -n \\<name> -t \\<target>`\n\nwhere target is some target in \n`android list targets`\n\nor use android avd manager by running\n`android avd`"
+    }
+  ]
+}
